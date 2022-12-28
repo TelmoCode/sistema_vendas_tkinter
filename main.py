@@ -14,8 +14,23 @@ root.configure(background='yellow')
 framePrinc = Frame(root,bg='blue', bd=10, relief= RIDGE)
 framePrinc.grid()
 
-frameP1 = Frame(root,bg='blue', bd=10, relief= RIDGE)
-frameP1.grid()
+frameP1 = Frame(framePrinc,bg='blue', bd=10, relief= RIDGE)
+frameP1.grid(row=0,column=0,columnspan=4, sticky=W)
+
+frameP2 = Frame(framePrinc,bg='blue', bd=10, relief= RIDGE)
+frameP2.grid(row=1,column=0, sticky=W)
+
+frameP3 = Frame(framePrinc,bg='blue', bd=10, relief= RIDGE)
+frameP3.grid(row=1,column=1, sticky=W)
+
+frameP4 = Frame(framePrinc,bg='blue', bd=10, relief= RIDGE)
+frameP4.grid(row=1,column=2, sticky=W)
+
+frameP5 = Frame(frameP4,bg='blue', bd=10, relief= RIDGE)
+frameP5.grid(row=0,column=0, sticky=W)
+
+frameP5 = Frame(frameP4,bg='blue', bd=10, relief= RIDGE)
+frameP5.grid(row=1, sticky=W)
 
 
 root.mainloop()
