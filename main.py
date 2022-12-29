@@ -30,7 +30,12 @@ frameP5 = Frame(frameP4,bg='blue', bd=10, relief= RIDGE)
 frameP5.grid(row=0,column=0, sticky=W)
 
 frameP5 = Frame(frameP4,bg='blue', bd=10, relief= RIDGE)
-frameP5.grid(row=1, sticky=W)
+frameP5.grid(row=1,column=0,columnspan=4, sticky=W)
+
+lblDate = Label(frameP1,text="\tDate\t",font=('arial',30,'bold'),
+                padx=9,pady=9,bd=14,bg='Cadet Blue', fg='Cornsilk',
+                justify=CENTER
+                ).grid(row=0,column=0)
 
 
 root.mainloop()
